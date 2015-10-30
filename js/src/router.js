@@ -1,4 +1,7 @@
 App.Router.map(function() {
+  this.resource("login");
+  this.resource("test");
+  this.resource("profile");
   this.resource("team");
   this.resource("mission");
   this.resource("expeditions");
@@ -10,6 +13,7 @@ App.Router.map(function() {
   this.route("contact");
   this.resource("legal");
   this.resource("releaseForm");
-  this.resource("books");
-  this.resource("book", {path:"/books/:book_id"})
+  this.resource("dashboard");
+  this.resource("book", {path:"/dashboard/:book_id"});
+  this.route("create_book");
 })
